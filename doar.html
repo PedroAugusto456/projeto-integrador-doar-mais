@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doar+ - Anunciar Doação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container-header">
+            <div class="logo-area">
+                <img src="foto.png" alt="Logo Doar+" class="minha-logo">
+            </div>
+    
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="doar.html" class="active">Doar</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="acoes-header">
+                <a href="login.html" class="btn-login-moderno">Entrar</a>
+                <a href="cadastro.html" class="btn-cadastro-moderno">Cadastrar</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="doar-container">
+        <div class="doar-header">
+            <h1>Anunciar Doação</h1>
+            <p>Preencha os dados abaixo para anunciar seu item</p>
+        </div>
+
+        <form class="doar-form">
+            <!-- Título -->
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-tag"></i>
+                    Título do Item
+                </label>
+                <input type="text" placeholder="Ex: Sofá em bom estado, Livros infantis..." required>
+            </div>
+
+            <!-- Categoria -->
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-list"></i>
+                    Categoria
+                </label>
+                <div class="categoria-opcoes">
+                    <label class="categoria-item">
+                        <input type="radio" name="categoria"> Móveis
+                    </label>
+                    <label class="categoria-item">
+                        <input type="radio" name="categoria"> Eletrônicos
+                    </label>
+                    <label class="categoria-item">
+                        <input type="radio" name="categoria"> Roupas
+                    </label>
+                    <label class="categoria-item">
+                        <input type="radio" name="categoria"> Livros
+                    </label>
+                    <label class="categoria-item">
+                        <input type="radio" name="categoria"> Brinquedos
+                    </label>
+                    <label class="categoria-item">
+                        <input type="radio" name="categoria"> Outros
+                    </label>
+                </div>
+            </div>
+
+            <!-- Descrição -->
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-align-left"></i>
+                    Descrição
+                </label>
+                <textarea placeholder="Descreva o item, estado de conservação, detalhes importantes..."></textarea>
+            </div>
+
+            <!-- Endereço -->
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Endereço para Retirada
+                </label>
+                <input type="text" placeholder="Rua, número, bairro, cidade - UF" required>
+            </div>
+
+            <!-- Fotos (opcional) -->
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-camera"></i>
+                    Fotos do Item (opcional)
+                </label>
+                <input type="file" multiple accept="image/*">
+                <small style="color: #666;">Você pode adicionar até 5 fotos</small>
+            </div>
+
+            <!-- Opção de Chat -->
+            <div class="chat-option">
+                <i class="fas fa-comments"></i>
+                <div>
+                    <p><strong>Chat com interessados</strong></p>
+                    <p>Quando alguém se interessar pelo seu item, vocês poderão conversar pelo chat para combinar a retirada.</p>
+                    <small>O chat será ativado após a publicação do anúncio</small>
+                </div>
+            </div>
+
+            <!-- Botão -->
+            <button type="submit" class="btn-anunciar">
+                <i class="fas fa-hand-holding-heart"></i>
+                Anunciar Doação
+            </button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-info">
+                <div class="logo-area">
+                    <img src="foto.png" alt="Logo Doar+" class="minha-logo">
+                    <span class="logo-text">Doar+</span>
+                </div>
+                <p>Nossa missão é facilitar o ciclo de solidariedade através da tecnologia.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="doar.html">Quero Doar</a></li>
+                    <li><a href="ver-doacoes.html">Ver Doações</a></li>
+                    <li><a href="sobre.html">Nossa Causa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Fale Conosco</h4>
+                <p><i class="fas fa-envelope"></i> Doar+@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                <p><i class="fas fa-instagram"></i> @doar+_oficial</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Doar+ - Transforme Vidas</p>
+        </div>
+    </footer>
+</body>
+</html>

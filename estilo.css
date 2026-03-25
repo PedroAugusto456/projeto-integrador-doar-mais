@@ -23,7 +23,7 @@ body {
 
 /* ===== HEADER PRINCIPAL ===== */
 .header {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -47,8 +47,8 @@ body {
 }
 
 .logo-area .minha-logo {
-    width: 90px;
-    height: 80px;
+    width: 180px;
+    height: auto;
     cursor: pointer;
 }
 
@@ -272,14 +272,20 @@ body {
     padding: 10px 0;
 }
 
+/* Ajuste da logo */
+.header-login img {
+    width: 180px;
+    height: auto;
+}
+
 .container-header-login {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+
 
 .btn-voltar-inicio {
     display: flex;
@@ -292,6 +298,7 @@ body {
     border-radius: 5px;
     transition: 0.3s;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .btn-voltar-inicio:hover {

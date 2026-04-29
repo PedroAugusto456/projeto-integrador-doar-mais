@@ -89,9 +89,19 @@ body {
 /* Botões do Header */
 .acoes-header {
     display: flex;
-    gap: 10px;
-    z-index: 10;
+    align-items: center;
 }
+
+.foto-perfil-circulo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff; 
+    
+}
+
+
 
 .btn-login-moderno {
     text-decoration: none;
@@ -1139,25 +1149,7 @@ body {
     border-color: var(--verde-claro);
 }
 
-/* ===== ANIMAÇÕES ===== */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.login-container,
-.login-container-simples,
-.card-doacao,
-.contato-info,
-.contato-form {
-    animation: fadeIn 0.5s ease-out;
-}
 
 /* ===== MENSAGENS DE ALERTA ===== */
 .alert-sucesso {
@@ -1342,4 +1334,40 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+/* Botão de busca CEP */
+.btn-buscar-cep {
+    background: var(--cor-primaria);
+    color: var(--branco);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-buscar-cep:hover {
+    background: var(--verde-escuro);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+.btn-buscar-cep:disabled {
+    background: #999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Container de loading */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
 }

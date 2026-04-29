@@ -1,0 +1,51 @@
+/* ===== VARIÁVEIS GLOBAIS ===== */
+:root {
+    --cor-primaria: #2e7d32;
+    --cor-secundaria: #1565c0;
+    --texto-escuro: #1a1a1a;
+    --branco: #ffffff;
+    --cinza-claro: #f4f7f6;
+    --destaque-amarelo: #feb236;
+    --verde-claro: #4caf50;
+    --verde-escuro: #1b5e20;
+    --cinza-input: #f8f9fa;
+    --sombra-suave: 0 10px 30px rgba(0,0,0,0.1);
+    --vermelho-erro: #ff4444;
+    --azul-link: #1976d2;
+}
+
+/* ===== ESTILOS GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cinza-claro);
+}
+
+/* ===== MENSAGENS DE ALERTA ===== */
+.alert-sucesso {
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 999;
+}
+
+.alert-erro {
+    background: #ff4444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 999;
+}

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/formularios.css">
     <link rel="stylesheet" href="css/paginas.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -95,14 +96,84 @@
                 <textarea placeholder="Descreva o item, estado de conservação, detalhes importantes..."></textarea>
             </div>
 
-            <!-- Endereço -->
-            <div class="form-group">
-                <label>
-                    <i class="fas fa-map-marker-alt"></i>
-                    Endereço para Retirada
-                </label>
-                <input type="text" placeholder="Rua, número, bairro, cidade - UF" required>
+             <!-- CEP com busca automática -->
+             <div class="form-group full-width">
+                <div style="display: flex; gap: 10px; align-items: flex-end;">
+                    <div style="flex: 2;">
+                        <label for="cep" style="margin-bottom: 5px;">
+                            <i class="fas fa-search-location"></i>
+                            CEP
+                        </label>
+                        <input type="text" id="cep" placeholder="00000-000" maxlength="9" style="flex: 1;">
+                    </div>
+                    <div style="flex: 1;">
+                        <button type="button" id="btnBuscarCep" class="btn-buscar-cep">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                    </div>
+                </div>
+                <small style="color: #666; display: block; margin-top: 5px;">
+                    <i class="fas fa-info-circle"></i> Digite o CEP e clique em Buscar para preencher automaticamente
+                </small>
             </div>
+
+            <!-- Rua -->
+            <div class="form-group full-width">
+                <input type="text" id="rua" placeholder="Rua / Avenida" required>
+            </div>
+
+            <!-- Número e Bairro -->
+            <div class="form-group">
+                <input type="text" id="numero" placeholder="Número" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="bairro" placeholder="Bairro" required>
+            </div>
+
+            <!-- Complemento -->
+            <div class="form-group full-width">
+                <input type="text" id="complemento" placeholder="Complemento (opcional)">
+            </div>
+
+            <!-- Cidade e UF -->
+            <div class="form-group">
+                <input type="text" id="cidade" placeholder="Cidade" required>
+            </div>
+
+            <div class="form-group">
+                <select id="uf" required>
+                    <option value="">UF</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </div>
+
 
             <!-- Fotos (opcional) -->
             <div class="form-group">
